@@ -87,7 +87,7 @@ section{
 }
 
 .why{
-    width: 70%;
+    width: 60%;
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
@@ -101,6 +101,13 @@ section{
 .goals{
     width: 70%;
     margin: 1rem auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.goals li{
+    margin: 1.5rem;
 }
 
 footer{
@@ -185,6 +192,7 @@ footer .fI:hover{
     .goals{
         width: 90%;
         margin: 1rem auto;
+        display: block;
     }
     
     footer{
