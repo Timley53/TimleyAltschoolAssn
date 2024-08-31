@@ -1,0 +1,54 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.my_music{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.media{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.vis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.vis div{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    text-align: center;
+}
+.vis h3{
+    font-size: 1.4rem;
+}
+
+.vis img{
+    width: 90%;
+    outline: 3px solid rgba(218, 112, 214, 0.344);
+    border-radius: 3rem;
+}
+
+.vis video{
+    width: 90%;
+    height: 80%;
+    outline: 3px solid rgba(218, 112, 214, 0.344);
+    border-radius: 3rem;
+}
+
+.media audio{
+    margin: 3rem auto;
+    outline: 3px solid rgba(218, 112, 214, 0.344);
+    border-radius: 3rem;
+}

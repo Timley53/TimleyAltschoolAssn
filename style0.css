@@ -1,0 +1,215 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.214);
+}
+
+header .logo{
+    text-decoration: none;
+    margin: 0 1rem;
+    width: 30%;
+    font-size: 1.55rem;
+    
+}
+header .logo::first-letter{
+    color: cadetblue;
+    font-family: cursive;
+}
+
+header nav{
+    width: 40%;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: .8rem;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: large;
+}
+
+
+section{
+    height: 80vh;
+}
+
+.about_me{
+    display: flex;
+    width: 85%;
+    margin: 2rem auto;
+    align-items: center;
+    /* height: 80vh; */
+}
+
+.about_me div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_me div img{
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+.bio h1{
+    color: cadetblue;
+    text-align: left;
+    width: 100%;
+    font-family: cursive;
+
+}
+.bio h1 small{
+    font-size: medium;
+    cursor: copy;
+}
+
+.why{
+    width: 70%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.goals{
+    width: 70%;
+    margin: 1rem auto ;
+}
+
+footer{
+    width: 100%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .fI{
+    margin: auto auto;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    transition: all .5s;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px 20px rgba(94, 100, 105, 0.932);
+    color: black;
+}
+
+footer .fI:hover{
+    outline: .6rem solid rgba(132, 190, 240, 0.237);
+    cursor: pointer;
+}
+
+
+
+
+@media all and (max-width: 950px) {
+
+
+
+   
+   
+    section{
+        height: auto;
+    }
+
+    .about_me{
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        margin: 2rem auto;
+        align-items: center;
+        height: auto;
+    }
+    
+
+    .about_me div{
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio h1{
+        color: cadetblue;
+        text-align: left;
+        width: 100%;
+        font-family: cursive;
+    
+    }
+    .bio h1 small{
+        font-size: medium;
+        cursor: copy;
+    }
+    
+    .why{
+        width: 90%;
+        margin: 3rem auto;
+        display: block;
+        justify-content: center;
+        text-align: left;
+        height: auto;
+    
+    }
+    
+    .goals{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    footer{
+        width: 100%;
+        margin: 5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    footer .fI{
+        margin: auto auto;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        border: none;
+        transition: all .5s;
+        text-decoration: none;
+        box-shadow: 1px 1px 20px 20px rgba(94, 100, 105, 0.932);
+        color: black;
+    }
+    
+    footer .fI:hover{
+        outline: .6rem solid rgba(132, 190, 240, 0.237);
+        cursor: pointer;
+    }
+    
+}

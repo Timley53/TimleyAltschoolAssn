@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+position: relative;
+}
+
+header{
+    display: flex;
+    padding: .3rem;
+    justify-content: end;
+}
+
+header span {
+    color: rgb(10, 10, 201);
+}
+
+.img_signUp{
+    display: flex;
+    width: 90%;
+    padding: 1rem;
+    gap: 3%;
+    margin: auto;
+    justify-content: space-between;
+  
+}
+
+.alt_img_contact{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 45%;
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.alt_img_contact img{
+    width: 80%;
+    min-width: 300px;
+    height: 50%;
+    object-fit: contain;
+}
+.alt_img_contact h1{
+    width: 80%;
+    font-size: 3.1rem;
+}
+
+.contact{
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact span{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.contact span a{
+    text-decoration: none;
+    color: rgb(27, 27, 196);
+    font-size: 1.1rem;
+}
+
+.contact p{
+    font-size: .88rem;
+}
+
+
+form{
+    width: 55%;
+    padding: .4rem;
+
+}
+form > h1{
+    line-height: 5px;
+}
+
+form > p{
+    color: gray;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form div label{
+    width: 48%;
+    margin: .8rem 0;
+    /* border: 1px solid rgba(175, 48, 48, 0.313); */
+
+}
+
+label h3{
+    margin: .6rem 0.3rem;
+    font-size: medium;
+    font-weight: 400;
+    
+}
+label input{
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+    background-color: rgba(250, 235, 215, 0.313);
+    border: 1px solid rgba(250, 235, 215, 0.313);
+    width: 80% ;
+}
+
+label input:hover{
+    border: 1px solid rgba(0, 0, 255, 0.334);
+}
+
+label input:focus-within{
+    outline: 0;
+}
+
+form select{
+    width: 90%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+    background-color: rgba(250, 235, 215, 0.313);
+    border: 1px solid rgba(250, 235, 215, 0.313);
+}
+
+form select option {  
+    background-color: #f9f9f9; /* Option background color */  
+    color: black; /* Option text color */  
+    color: gray;
+}  
+
+form select:focus {  
+    outline: none; /* Remove focus outline */  
+    box-shadow: 0 0 5px #333; /* Shadow on focus */ 
+}  
+
+form select:focus > option{
+    color: black; 
+}
+.referred label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.referred select{
+    width: 95%;
+}
+
+.instructions{
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+}
+.instructions p{
+    width: 80%;
+}
+
+.submit{
+    width: 90%;
+    padding: 1rem;
+    background-color: #6A6FF5;
+    color: white;
+    font-size: large;
+    border-radius: .4rem;
+    border: 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+.submit:hover{
+    opacity: .5;
+}
+
+.submit i{
+    margin: 0 1rem;
+}
+
+.support{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: auto;
+    margin: .7rem;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+
+.support .message{
+    background-color: white ;
+    padding: .2rem .6rem;
+    width: 140px;
+    box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.507);
+    border: 0;
+    line-height: .2rem;
+    border-radius: .4rem;
+    position: relative;
+    font-size: small;
+    cursor: pointer;
+}
+
+.support div p:nth-of-type(2){
+    color: gray;
+    font-size: smaller;
+}
+
+.support .message::after {  
+    content: '';  
+    position: absolute;  
+    top: 20px; 
+    left: 100%;
+    margin-left: 0;  
+    border-width: 7px;  
+    border-style: solid;  
+    border-color: transparent transparent transparent #f1f1f1;   
+}  
+.support .cancel{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    padding: .1rem .25rem;
+    border: 0;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.support .message:hover .cancel{
+    display: flex;
+}
+
+.support > button{
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(50, 50, 209);
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem;
+    margin: auto auto auto 1rem;
+}
+
+
+.Alt_School{
+    display: none;
+}
+
+@media all and (max-width: 950px) { 
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .Alt_School{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem .5rem;
+        font-size:x-large;
+        color: black;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+
+    }
+    .Alt_School span{
+        color: black;
+    }
+     
+    
+    .img_signUp{
+        display: flex;
+        width: 100%;
+        padding: 0rem;
+        gap: 3%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+   
+    .alt_img_contact{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        justify-items: center;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .alt_img_contact img{
+        width: 90%;
+        min-width: 250px;
+        height: 40%;
+        object-fit: contain;
+    }
+
+    form{
+        width: 95%;
+        padding: .4rem;
+    
+    }
+
+    form div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+
+    }
+
+
+    
+
+    @media all and (max-width: 650px) {  
+
+        /* .alt_img_contact{
+            display: none;
+        }
+       */
+
+        
+    form{
+        width: 95%;
+        padding: .7rem;
+    
+    }
+
+    form div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    form div label{
+        width: 100%;
+        margin: .3rem 0;
+
+        /* border: 1px solid rgba(175, 48, 48, 0.313); */
+    
+    }
+    
+    label h3{
+        margin: .6rem 0.3rem;
+        font-size: medium;
+        font-weight: 400;
+        
+    }
+    label input{
+        padding: 1rem;
+        border-radius: .5rem;
+        border: 0;
+        background-color: rgba(250, 235, 215, 0.313);
+        border: 1px solid rgba(250, 235, 215, 0.313);
+        width: 90% ;
+    }
+     form select{
+        width: 97%;
+        padding: 1rem 0.5;
+        border-radius: .5rem;
+        background-color: rgba(250, 235, 215, 0.313);
+        border: 1px solid rgba(250, 235, 215, 0.313);
+    }
+
+    }
